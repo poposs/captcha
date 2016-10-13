@@ -44,5 +44,8 @@ describe("Captcha()", function() {
   it('it should be "5 + four"', function() {
     expect(echo.echopattern_one(0,5,4)).toBe('5 + four');
   });
+  it('it should be "6 - five"', function() {
+    expect(echo.echopattern_one(1,6,5)).toBe('6 - five');
+  });
 
 });
