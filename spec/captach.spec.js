@@ -50,5 +50,8 @@ describe("Captcha()", function() {
   it('it should be "7 - six"', function() {
     expect(echo.echopattern_one(1,7,6)).toBe('7 - six');
   });
+  it('it should be "8 - seven"', function() {
+    expect(echo.echopattern_one(1,8,7)).toBe('8 - seven');
+  });
 
 });
