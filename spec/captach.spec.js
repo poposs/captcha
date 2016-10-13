@@ -56,5 +56,8 @@ describe("Captcha()", function() {
   it('it shold be "9 - eight"', function() {
     expect(echo.echopattern_one(1,9,8)).toBe('9 - eight');
   });
+  it('it should be "10 - nine"', function() {
+    expect(echo.echopattern_one(1,10,9)).toBe('10 - nine');
+  });
 
 });
