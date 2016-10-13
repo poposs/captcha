@@ -74,4 +74,7 @@ describe("Captcha()", function() {
   it('it sholud be "two + 3"', function() {
     expect(echo.echopattern_two(0,2,3)).toBe('two + 3');
   });
+  it('it should be "three + 4"', function() {
+    expect(echo.echopattern_two(0,3,4)).toBe('three + 4');
+  });
 });
