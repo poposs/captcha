@@ -71,4 +71,7 @@ describe("Captcha()", function() {
   it('it sholud be "one + 2"', function() {
     expect(echo.echopattern_two(0,1,2)).toBe('one + 2');
   });
+  it('it sholud be "two + 3"', function() {
+    expect(echo.echopattern_two(0,2,3)).toBe('two + 3');
+  });
 });
