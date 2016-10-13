@@ -30,10 +30,13 @@ function Captcha() {
 describe("Captcha()", function() {
   var echo = new Captcha();
   it('it should be "1 + zero"', function() {
-    expect(echo.echopattern_one()).toBe('1 + zero');
+    expect(echo.echopattern_one(0,1,0)).toBe('1 + zero');
   });
   it('it should be "2 + one"', function() {
-    expect(echo.echopattern_one()).toBe('2 + one');
+    expect(echo.echopattern_one(0,2,1)).toBe('2 + one');
+  });
+  it('it should be "3 + two"', function() {
+    expect(echo.echopattern_one(0,3,2)).toBe('3 + two')
   });
 
 
