@@ -25,7 +25,7 @@ function Captcha() {
   this.echopattern_one = function(O,R,L){
     return number.numberOparator(R)+" "+o.oparator(O)+" "+string.stringOparator(L);
   }
-  this.echopattern_two = function(O,R,L){
+  this.echopattern_two = function(O,L,R){
     return string.stringOparator(L)+" "+o.oparator(O)+" "+number.numberOparator(R);
   }
 
@@ -66,6 +66,9 @@ describe("Captcha()", function() {
 describe("Captcha()", function() {
   var echo = new Captcha();
   it('it should be "zero + 1"', function() {
-    expect(echo.echopattern_two(0,1,0)).toBe('zero + 1');
+    expect(echo.echopattern_two(0,0,1)).toBe('zero + 1');
+  });
+  it('it sholud be "one + 2"', function() {
+    expect(echo.echopattern_two(0,1,2)).toBe('one + 2');
   });
 });
