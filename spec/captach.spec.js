@@ -59,5 +59,10 @@ describe("Captcha()", function() {
   it('it should be "9 - nine"', function() {
     expect(echo.echopattern_one(1,9,9)).toBe('9 - nine');
   });
-
+});
+describe("Captcha()", function() {
+  var echo = new Captcha();
+  it('it should be "zero + 1"', function() {
+    expect(echo.echopattern_one(0,1,0)).toBe('zero + 1');
+  });
 });
