@@ -38,6 +38,9 @@ describe("Captcha()", function() {
   it('it should be "3 + two"', function() {
     expect(echo.echopattern_one(0,3,2)).toBe('3 + two')
   });
+  it('it shoule be "4 + three"', function() {
+    expect(echo.echopattern_one(0,4,3)).toBe('4 + three')
+  });
 
 
 });
