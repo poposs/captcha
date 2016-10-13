@@ -36,11 +36,13 @@ describe("Captcha()", function() {
     expect(echo.echopattern_one(0,2,1)).toBe('2 + one');
   });
   it('it should be "3 + two"', function() {
-    expect(echo.echopattern_one(0,3,2)).toBe('3 + two')
+    expect(echo.echopattern_one(0,3,2)).toBe('3 + two');
   });
-  it('it shoule be "4 + three"', function() {
-    expect(echo.echopattern_one(0,4,3)).toBe('4 + three')
+  it('it should be "4 + three"', function() {
+    expect(echo.echopattern_one(0,4,3)).toBe('4 + three');
   });
-
+  it('it should be "5 + four"', function() {
+    expect(echo.echopattern_one(0,5,4)).toBe('5 + four');
+  });
 
 });
