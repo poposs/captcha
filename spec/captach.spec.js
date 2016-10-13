@@ -1,5 +1,9 @@
-describe("A suite", function() {
-  it("contains spec with an expectation", function() {
-    expect(true).toBe(true);
+describe("Captcha()", function() {
+  var echo = new Captcha();
+  it('it should be "1 + zero"', function() {
+    echo.addnumber();
+    expect(echo.echopattern_one()).toBe('1 + zero');
   });
+  
+
 });
