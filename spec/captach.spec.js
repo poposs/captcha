@@ -89,4 +89,7 @@ describe("Captcha()", function() {
   it('it should be "seven - 8"', function() {
     expect(echo.echopattern_two(1,7,8)).toBe('seven - 8');
   });
+  it('it should be "eight - 9"', function() {
+    expect(echo.echopattern_two(1,8,9)).toBe('eight - 9');
+  });
 });
