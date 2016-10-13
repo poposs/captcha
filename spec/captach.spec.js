@@ -9,7 +9,7 @@ function Captcha() {
   this.echopattern_one = function(){
     return numberOparator[i]+" "+oparator[j]+" "+stringOparator[k];
   }
-  
+
   this.addnumber = function(){
     i++;
   }
@@ -19,6 +19,11 @@ describe("Captcha()", function() {
   it('it should be "1 + zero"', function() {
     echo.addnumber();
     expect(echo.echopattern_one()).toBe('1 + zero');
+  });
+  it('it should be "2 + one"', function() {
+    echo.addnumber();
+    echo.addString();
+    expect(echo.echopattern_one()).toBe('2 + one');
   });
 
 
